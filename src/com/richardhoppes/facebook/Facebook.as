@@ -179,7 +179,7 @@ package com.richardhoppes.facebook {
 			var accessTokenPattern:RegExp = /access_token=([^&]*)/;
 			var accessTokenObject:Object = accessTokenPattern.exec(event.currentTarget.data as String);
 			
-			// Get access token
+			// Get expiration timestamp
 			var expiresTokenPattern:RegExp = /expires=([^&]*)/;
 			var expiresTokenObject:Object = expiresTokenPattern.exec(event.currentTarget.data as String);
 
